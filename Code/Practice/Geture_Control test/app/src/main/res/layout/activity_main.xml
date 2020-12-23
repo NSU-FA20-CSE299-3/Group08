@@ -4,18 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    android:background="#F44336"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Shake phone!!"
-        android:textSize="77dp"
-        android:gravity="center"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-
-     />
+        android:text="Shake the phone to detect to shake event"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
