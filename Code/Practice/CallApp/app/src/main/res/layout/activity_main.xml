@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="call 0377778888"
+        android:background="#1FF428"
         android:textSize="55dp"
         android:layout_marginTop="555dp"
         />
