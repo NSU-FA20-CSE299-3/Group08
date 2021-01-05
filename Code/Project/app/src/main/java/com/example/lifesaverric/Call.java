@@ -21,7 +21,7 @@ public class Call extends android.app.Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel: 911"));
+                callIntent.setData(Uri.parse("tel: 01777183861"));
                 if (ActivityCompat.checkSelfPermission(Call.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     return;
