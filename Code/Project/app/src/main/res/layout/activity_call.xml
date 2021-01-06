@@ -9,13 +9,24 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/buttonCall"
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="call 911"
+        android:text="Retry"
         android:background="#1FF428"
         android:textSize="55dp"
         android:layout_marginTop="555dp"
         />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Logout"
+        android:textSize="55dp"
+        android:background="#E80F0F"
+        />
+
 
 </LinearLayout>

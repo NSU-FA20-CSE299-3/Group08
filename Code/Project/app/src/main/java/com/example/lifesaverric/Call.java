@@ -11,12 +11,14 @@ import android.widget.Button;
 import androidx.core.app.ActivityCompat;
 
 public class Call extends android.app.Activity {
-    private Button button;
+    private Button button,btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call);
+                button = findViewById(R.id.logout);
+                btn= findViewById(R.id.btn);
 
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
                 callIntent.setData(Uri.parse("tel: 01777183861"));
@@ -25,6 +27,22 @@ public class Call extends android.app.Activity {
                     return;
                 }
                 startActivity(callIntent);
+
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+
+                startActivity(new Intent(Call.this,Register.class));
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+
+                startActivity(new Intent(Call.this,Login.class));
+            }
+        });
+
             }
 
 
