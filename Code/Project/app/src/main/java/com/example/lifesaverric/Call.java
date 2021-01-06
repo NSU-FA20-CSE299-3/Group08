@@ -17,9 +17,7 @@ public class Call extends android.app.Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call);
-        button = (Button) findViewById(R.id.buttonCall);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
+
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
                 callIntent.setData(Uri.parse("tel: 01777183861"));
                 if (ActivityCompat.checkSelfPermission(Call.this,
@@ -28,7 +26,6 @@ public class Call extends android.app.Activity {
                 }
                 startActivity(callIntent);
             }
-        });
+
 
     }
-}
