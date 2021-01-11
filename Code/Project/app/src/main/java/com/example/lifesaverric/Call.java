@@ -10,13 +10,17 @@ import android.widget.Button;
 
 import androidx.core.app.ActivityCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Call extends android.app.Activity {
     private Button button,btn;
+    FirebaseAuth fAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call);
+        fAuth = FirebaseAuth.getInstance();
                 button = findViewById(R.id.logout);
                 btn= findViewById(R.id.btn);
 
@@ -32,13 +36,13 @@ public class Call extends android.app.Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                startActivity(new Intent(Call.this,Register.class));
+                startActivity(new Intent(Call.this,HomePage.class));
             }
         });
 
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-
+                fAuth.signOut();
                 startActivity(new Intent(Call.this,Login.class));
             }
         });
