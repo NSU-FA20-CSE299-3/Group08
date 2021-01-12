@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Call extends android.app.Activity {
     private Button button,btn;
     FirebaseAuth fAuth;
-
+                                                                                                                                                                         String PHONE = "01777183861" ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,15 +23,14 @@ public class Call extends android.app.Activity {
         fAuth = FirebaseAuth.getInstance();
                 button = findViewById(R.id.logout);
                 btn= findViewById(R.id.btn);
-
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel: 01777183861"));
+                callIntent.setData(Uri.parse("tel: "+PHONE));
                 if (ActivityCompat.checkSelfPermission(Call.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     return;
                 }
                 startActivity(callIntent);
-
+fAuth.getCurrentUser().getPhoneNumber();
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
