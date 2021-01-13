@@ -29,7 +29,8 @@ public class Register extends AppCompatActivity
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register2);
 
@@ -39,6 +40,11 @@ public class Register extends AppCompatActivity
         mPhone = findViewById(R.id.phone);
         mRegisterbtn = findViewById(R.id.registerbtn);
         mLoginBtn = findViewById(R.id.createtext);
+        
+        String phonevalue = mPhone.getText().toString().trim();
+        Intent intent = new Intent(Register.this,MainActivity.class);
+        intent.putExtra("PHONE",phonevalue);
+
 
         fAuth = FirebaseAuth.getInstance();
         if (fAuth.getCurrentUser() != null)
@@ -54,7 +60,6 @@ public class Register extends AppCompatActivity
             {
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
-
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is Required");
                     return;
