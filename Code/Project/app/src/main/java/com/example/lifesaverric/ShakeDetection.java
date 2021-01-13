@@ -2,6 +2,7 @@ package com.example.lifesaverric;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -36,7 +37,7 @@ public class ShakeDetection extends AppCompatActivity {
             float delta = mAccelCurrent - mAccelLast;
             mAccel = mAccel * 0.9f + delta;
             if (mAccel > 12) {
-                Toast.makeText(getApplicationContext(), "Shake event detected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent( ShakeDetection.this,MapsActivity.class));
             }
         }
         @Override
