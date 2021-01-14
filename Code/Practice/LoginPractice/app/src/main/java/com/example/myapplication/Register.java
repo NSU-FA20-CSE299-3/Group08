@@ -17,6 +17,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthActionCodeException;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class Register extends AppCompatActivity
 
@@ -24,9 +27,17 @@ public class Register extends AppCompatActivity
     EditText mFullName,mEmail,mPassword,mPhone;
             Button mRegisterbtn;
             TextView mLoginBtn;
+            String st;
             FirebaseAuth fAuth;
 
 
+    public EditText getmPhone() {
+        return mPhone;
+    }
+
+    public void setmPhone(EditText mPhone) {
+        this.mPhone = mPhone;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,10 +51,7 @@ public class Register extends AppCompatActivity
         mPhone = findViewById(R.id.phone);
         mRegisterbtn = findViewById(R.id.registerbtn);
         mLoginBtn = findViewById(R.id.createtext);
-        
-        String phonevalue = mPhone.getText().toString().trim();
-        Intent intent = new Intent(Register.this,MainActivity.class);
-        intent.putExtra("PHONE",phonevalue);
+
 
 
         fAuth = FirebaseAuth.getInstance();
@@ -60,6 +68,8 @@ public class Register extends AppCompatActivity
             {
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
+                String phone = mPhone.getText().toString().trim();
+                String name = mFullName.getText().toString().trim();
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is Required");
                     return;
@@ -80,7 +90,11 @@ public class Register extends AppCompatActivity
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
+
+                            FirebaseDatabase.getInstance().getReference().child(name).child("PhoneNumber").setValue(phone);
+                       
                             Toast.makeText(Register.this, "User Created", Toast.LENGTH_SHORT).show();
+
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }
                         else
@@ -89,6 +103,7 @@ public class Register extends AppCompatActivity
                         }
                     }
                 });
+
 
             }
 

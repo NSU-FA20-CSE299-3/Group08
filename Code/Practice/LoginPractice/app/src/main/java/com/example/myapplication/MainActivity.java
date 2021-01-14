@@ -13,14 +13,14 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
     TextView tv;
+    String st;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tv = findViewById(R.id.textV);
-        tv.setText("PHONE "+getIntent().getStringExtra("PHONE"));
+
     }
 
     public void LogOut(View view)
