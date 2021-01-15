@@ -31,8 +31,8 @@ public class Call extends android.app.Activity {
         setContentView(R.layout.activity_call);
         fAuth = FirebaseAuth.getInstance();
       TextView tv =findViewById(R.id.textV);
-        // String s = fAuth.getCurrentUser().getEmail().toString();
-         //tv.setText("Logged in as: "+s);
+         String s = fAuth.getCurrentUser().getEmail().toString();
+         tv.setText("Logged in as: "+s);
 
        // fAuth = FirebaseAuth.getInstance();
         //tv =findViewById(R.id.textV);
@@ -42,7 +42,7 @@ public class Call extends android.app.Activity {
 
         DatabaseReference database = FirebaseDatabase.getInstance().getReference(eNAME);
         Query checkUser = database.orderByChild("PhoneNumber");
-        //tv.setText("123456789");
+
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -55,7 +55,7 @@ public class Call extends android.app.Activity {
                     return;
                 }
                 startActivity(callIntent);
-                tv.setText(phone);
+               // tv.setText(phone);
             }
 
             @Override
