@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthActionCodeException;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity
 
@@ -25,7 +26,7 @@ public class Register extends AppCompatActivity
     Button mRegisterbtn;
     TextView mLoginBtn;
     FirebaseAuth fAuth;
-    public String phone;
+    public String phone,name;
 
 
 
@@ -54,6 +55,7 @@ public class Register extends AppCompatActivity
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                  phone = mPhone.getText().toString().trim();
+                 name = mFullName.getText().toString().trim();
 
 
 
@@ -78,6 +80,10 @@ public class Register extends AppCompatActivity
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
+
+                            FirebaseDatabase.getInstance().getReference().child(name).child("PhoneNumber").setValue(phone);
+                            FirebaseDatabase.getInstance().getReference().child(name).child("Email").setValue(email);
+                            FirebaseDatabase.getInstance().getReference().child(name).child("Name").setValue(name);
                             Toast.makeText(Register.this, "User Created", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MapsActivity.class));
                         }

@@ -92,7 +92,9 @@ public class Register extends AppCompatActivity
                         {
 
                             FirebaseDatabase.getInstance().getReference().child(name).child("PhoneNumber").setValue(phone);
-                       
+                            FirebaseDatabase.getInstance().getReference().child(name).child("Email").setValue(email);
+                            FirebaseDatabase.getInstance().getReference().child(name).child("Email").setValue(name);
+
                             Toast.makeText(Register.this, "User Created", Toast.LENGTH_SHORT).show();
 
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
