@@ -1,56 +1,145 @@
-<p style="text-align: center;">&nbsp;</p>
-<p style="text-align: center;">&nbsp;</p>
-<p align="center"><strong><img src="https://media.dhakatribune.com/uploads/2016/11/nsulogo.jpg" alt="" width="307" height="172" /></strong></p>
-<p align="center"><strong>North South University</strong></p>
-<p align="center">Department of Electrical &amp; Computer Engineering</p>
-<p align="center"><strong>Project Proposal</strong></p>
-<p align="center"><strong>Group No</strong>: 8</p>
-<p align="center"><strong>Fall 2020</strong></p>
-<p align="center"><strong>Project Name</strong>: Emergency app Ric</p>
-<p align="center"><strong>Course No</strong>: CSE 299 <strong>Sec</strong><strong>:</strong> 3</p>
-<p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (Sas3)</p>
-<p align="center"><strong>Name</strong><strong>:</strong> Md.Rownak Islam Dip </p>
-<p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1731336042</p>
-<p align="center"><strong>Email</strong><strong>:</strong> <a href="rownak.pip@northsouth.edu">rownak.pip@northsouth.edu</a></p>
-<p align="center"><strong>Date Prepared</strong><strong>: </strong>11/15/2020</p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>INTRODUCTION</strong></p>
-<p>In 2020, it is rare to find someone without a smartphone. So, as people are already using smartphones daily, why not make their life safer by using an Emergency app.  Helps in medical emergencies and accidents by calling emergency contacts and sending live location feeds to emergency contacts so they can come to help or send help (if badly hurt or unconscious).</p>
-<p>When feeling unwell or having symptoms of illness like stroke or heart attack. You can quickly ask for help and send your exact location. If you are in risk of being attacked you can instantly send a distress call with current location. If attacked suddenly the struggling will make the app send distress calls on its own. Especially useful for women safety in our current situations. All this can be done with simple gestures. (Social and safety value)
-The app helps you find nearby hospitals, police stations and their contact numbers or  call ambulance services with a single tap on the designated icon in the app. (Mass use  and monthly subscription will help fund this app. Summoning ambulance and other  services through our app would also provide a chance to earn money)
+
+<!-- saved from url=(0042)file:///C:/Users/User1/Desktop/Readme.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><p align="center">
+  <img width="180" height="280" src="./Readme_files/north-south-university-logo-0CA3A4611D-seeklogo.com.png">
+</p>                                        
+
+
+
+
+
+
+
+
+
+  <h1 align="center">Project Name: Life Saver Ric</h1>
+  <h2 align="center">Course Number: CSE 299<br>
+  Section:03<br>
+  Semester: Fall 2020<br><br>
+  Faculty Name: Shaikh Shawon Arefin Shimon</h2>
+  <h3 align="center">Student Name: Rownak islam Dip<br>
+  Student ID: 1731336042<br>
+  Email: rownak.pip@northsouth.edu <br><br><br><br><br>
+  Date prepared: 21/01/2021</h3><br><br><br>
+
+
+
+
+
+
+
+
+
+
+<h2> Project Name: Life Saver Ric</h2><br>
+<h3 id="table-of-contents">Table of contents</h3>
+
+<ol>
+  <a href="file:///C:/Users/User1/Desktop/Readme.html#introduction"><li>Introduction</li><br></a>
+  <a href="file:///C:/Users/User1/Desktop/Readme.html#features"><li>Features
+    </li><br></a>
+  <a href="file:///C:/Users/User1/Desktop/Readme.html#technology"><li>Technology</li><br></a>
+  <a href="file:///C:/Users/User1/Desktop/Readme.html#businessplan"><li>BusinessPlan/Monetization</li></a><br>
+  <a href="file:///C:/Users/User1/Desktop/Readme.html#conclusion"><li>Conclusion</li></a><br><hr>
+
+</ol>
+<br>
+
+
+<h2 id="#introduction">1. Introduction</h2>
+<h3>1.1 Project Idea:</h3>
+<p>In 2020, it is rare to find someone without a smartphone. So, as people are already using
+smartphones daily, why not make their lives safer by using an Emergency app that helps
+in medical emergencies and accidents. The app will do that by calling emergency
+contacts and sending live location feeds to those emergency contacts. So, they can come
+to help or send help (if badly hurt or unconscious).
+When feeling ill or having symptoms of illness like stroke or heart attack. You can quickly
+ask for help and send your exact location. If you are in risk of being attacked you can
+instantly send a distress call with current location. If attacked suddenly the struggling will
+make the app send distress calls on its own. Especially useful for women safety in our
+current situations. All this can be done with simple gestures. (Social and safety value)
+The app helps you find nearby hospitals, police stations and their contact numbers or
+call ambulance services with a single tap on the designated icon in the app. (Mass use
+and monthly subscription will help fund this app. Summoning ambulance and other
+services through our app would also provide a chance to earn money)</p>
+
+<h2 id="features">2. Features</h2>
+  <p>Currently the following functions are available -
+  </p>
+<p><br>If the user cannot open the app, he can shake his phone three times and it will send an SMS with his location to his emergency contacts.  
+
+</p><p><br>It will call the users emergengy  contact and let the user talk to his emergency contacts. (Automatically) 
 </p>
-<p><strong>FEATURES</strong></p>
-<ul>
-<li>If the user cannot open the app, he can shake his phone three times and it will send a SMS with his location to his emergency contacts.</li>
-<li>Then it will call the emergency contact to make sure they did not miss SMS and let victim talk to his emergency contacts (Automatically)</li>
-<li>In advanced countries like the USA it will call the 911 services for rescue automatically</li>
-<li>If the user can open the app, he will have easy access to other features like finding the nearby hospitals, the shortest route to them, their contact number, ambulance services etc.</li>
-<li>Easy Sign in/up features, customizable profile.</li>
-<li>Can notice a person having seizures and send location and Call emergency contacts.</li>
-<li>The app will have a failsafe if the app is activated unintentionally the user will have 30 seconds to cancel the process.</li>
-</ul>
-<p><strong>TECHNOLOGY</strong></p>
-<p>The application will be developed by Android Studio. Android Studio is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development Using multiple android sensors typically built in Android devices such as gyroscope,
-accelerometer, gesture control. Google API will be used for location services.</p>
-<p>&nbsp;</p>
-<p><em>Frontend</em></p>
-<p>For the frontend we will be using XML and Java. XML is a markup language much like HTML used to describe data. In Android we use xml for designing our layouts because xml is a lightweight language, so it does not make our layout heavy. It also gives a more premium user interface and smoother experience.</p>
-<p><em>Backend</em></p>
-<p>For the backend we will be using Firebase. Firebase is a platform developed by Google for creating mobile and web applications.</p>
-<p><em>Database</em></p>
-<p>We will also be using the Firebase for Database. It has a Realtime Database feature. The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in Realtime to every connected client.</p>
-<p><em>Payment method</em></p>
-<p>Only the advanced features will be locked. Like many other apps the premium app can be bought from Google play store. Monthly subscription will also be an option by using Bkash Api to receive payment.</p>
-<p><strong>Monetization</strong></p>
-<p>As a safety/emergency app it will display ads related to healthcare and fitness only on the button Never blocking the view or interfering with the user’s interaction with the app.</p>
-<p>&nbsp;</p>
-<p><strong>Social Vakue</strong></p>
-<p>If you are in risk of being attacked you can instantly send a distress call with current location. If attacked suddenly the struggling will make the app send distress calls on its own. Especially useful for women safety in our current situations. All this can be done with simple gestures.</p>
-<p>&nbsp;</p>
-<p><strong>User Profile</strong></p>
-<p>There will be a profile page for every registered user to access their information, where they can track records of their previous incidents with date and time. Also, he can notify us if he has some serious health conditions like risk of stroke, Heart problem etc.</p>
-<p>&nbsp;</p>
-<p><strong>References</strong></p>
-<p>Google, YouTube, Eshikhon.</p>
-<p>&nbsp;</p>
+
+<p><br> In advanced countries like the USA, it will call the 911 rescue services
+</p><p><br>Can detect the user having seizures and send location and Call emergency  contacts. </p> 
+
+<br><h3>2.1 User Registration:</h3>
+  To access users first have to register. Users must include username,emergency contact number,email and password. The username will be used as a primary key to identify unique users. And so username will have to be unique. Letters, digits and @/./+/-/_ are permitted only.
+   <br>
+   <br>
+ <p align="center">
+   <img width="400" height="999" src="./Readme_files/6.PNG"><br>
+   Figure 1.0
+ </p>
+ <h3>2.2 Login to a specific platform :</h3>After completing  registration the users will be logged in automatically but they can log in manually as well. They will be introduced to the below log in page.<br>
+  <br>
+
+
+  <p align="center">
+  <img width="400" height="777" src="./Readme_files/5.png"><br>
+  Figure 2.0
+</p>
+<br>
+<br>
+
+<h3>2.3 Shake and fall detection on standby :</h3>
+<p>The app is in stand by mode and waiting to detect any sudden changes. it will be running in background and ready to detect fall or seizures</p> <br><br><br>
+
+  
+
+<p align="center">
+  <img width="444" height="777" src="./Readme_files/4.PNg"></p><h3>2.4 Completion page :</h3>
+"The app is waiting for further user intructions"
+<p align="center">
+  <img width="444" height="777" src="./Readme_files/2.PNG"></p>
+<h3>2.5 Menu Page :</h3>
+"The app is waiting for further user intructions"
+<p align="center">
+  <img width="444" height="777" src="./Readme_files/3.PNG"></p>
+  
+
+
+ <br>
+<br><br><br>
+<h2 id="#technology">3. Technology</h2>
+ <h3>3.1 Proposed Technology Stack: </h3>
+ <p>The application will be developed by Android Studio. Android Studio is the official integrated development environment for Google's Android operating system, built on  JetBrains' IntelliJ IDEA software and designed specifically for Android development  Using multiple android sensors typically built-in Android devices such as gyroscope,  accelerometer, gesture control. Google API will be used for location services. </p>
+
+
+
+ <h3>3.2 Implemented Technology Stack: </h3>
+ 
+
+<p>For the frontend, I used XML and Java. XML is a markup language much like  HTML used to describe data. In Android, we use XML for designing our layouts because  XML is a lightweight language, so it does not make our layout heavy. It also gives a more premium user interface and smoother experience.  
+
+</p><p>
+For the backend, I used Firebase. Firebase is a platform developed by  Google for creating mobile and web applications 
+
+</p>
+
+<p>I used the Firebase for Database. It has a Realtime Database feature.  The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON  and synchronized in real-time to every connected client. </p>
+<br>
+
+
+ <p></p>
+
+
+
+<h2 id="businessplan">4. BusinessPlan/Monetization</h2>
+<p>Only the advanced features will be locked. Like many other apps, the premium app can be bought from the Google play store. A monthly subscription will also be an option by using Bkash Api to receive payment. As a safety/emergency app, it will display ads related to health care and fitness only on the button Never blocking the view or interfering with the user's interaction with the app.</p>
+
+<h2>5. Conclusion</h2>
+<p id="#conclusion"></p>
+<p>In 2020, it is rare to find someone without a smartphone. So, as people are already using smartphones daily. Therefore, using an Emergency app that helps in medical emergencies and accidents is the easiest way to make their lives safer. It is especially useful for women safety in our current situations and for people with serious illness. All this can be done with simple gestures. Making this app very user friendly.  
+</p></body></html>
