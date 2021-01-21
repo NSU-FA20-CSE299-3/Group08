@@ -82,7 +82,7 @@ services through our app would also provide a chance to earn money)</p>
    <img width="400" height="999" src="./README_files/6.PNG"><br>
    Figure 1.0
  </p>
- <h3>2.2 Login to a specific platform :</h3>After completing  registration the users will be logged in automatically but they can log in manually as well. They will be introduced to the below log in page.<br>
+ <h3>2.2 Login page :</h3>After completing  registration the users will be logged in automatically but they can log in manually as well. They will be introduced to the below log in page.<br>
   <br>
 
 
@@ -99,13 +99,16 @@ services through our app would also provide a chance to earn money)</p>
   
 
 <p align="center">
-  <img width="444" height="777" src="./README_files/4.PNg"></p><h3>2.4 Completion page :</h3>
-"The app is waiting for further user intructions"
+  <img width="444" height="777" src="./README_files/4.PNg"></p><br><br><br>
+<h3>2.4 Completion page :</h3>
+The app is waiting for further user intructions
+<br><br>
 <p align="center">
-  <img width="444" height="777" src="./README_files/2.PNG"></p>
+  <img width="444" height="777" src="./README_files/2.PNG"></p><br><br><br>
+
 <h3>2.5 Menu Page :</h3>
-"The app is waiting for further user intructions"
-<p align="center">
+The app is waiting for further user intructions
+<br><br><p align="center">
   <img width="444" height="777" src="./README_files/3.PNG"></p>
   
 
